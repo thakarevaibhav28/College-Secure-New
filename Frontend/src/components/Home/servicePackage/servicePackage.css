@@ -1,0 +1,160 @@
+.category-container {
+    margin-left: 56px;
+    margin-bottom: 160px;
+  }
+  
+  .category-title {
+    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-left: -80px;
+    text-align: center;
+  }
+  
+  .category-title h5 {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: var(--content-bgcolor);
+  }
+  
+  .slider-container {
+    margin-top: -25px;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+  }
+  
+  .card {
+    max-width: 500px;
+    height: 330px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  
+  .card-media {
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card-title {
+    padding-top: 16px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .card-description {
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+  }
+  
+  .card-link {
+    font-family: 'Playfair Display', serif;
+    color: var(--login-color);
+    text-align: right;
+    padding-right: 40px;
+  }
+  
+  .arrow-button {
+    width: 45px;
+    height: 45px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    bottom: -60px;
+  }
+  
+  .prev-arrow {
+    left: 45%;
+  }
+  
+  .next-arrow {
+    right: 45%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .category-container {
+      margin-left: 0;
+    }
+  
+    .slider-container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .prev-arrow {
+      left: 40%;
+    }
+  
+    .next-arrow {
+      right: 40%;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .category-title {
+      margin-left: 0;
+    }
+  
+    .slider-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .prev-arrow {
+      left: 35%;
+    }
+  
+    .next-arrow {
+      right: 35%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slider-container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .prev-arrow {
+      left: 30%;
+    }
+  
+    .next-arrow {
+      right: 30%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .category-container {
+      margin-bottom: 80px;
+    }
+  
+    .card {
+      height: auto;
+    }
+  
+    .prev-arrow {
+      left: 25%;
+    }
+  
+    .next-arrow {
+      right: 25%;
+    }
+  }
+  
+  

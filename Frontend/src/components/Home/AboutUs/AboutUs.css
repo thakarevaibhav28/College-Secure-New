@@ -1,0 +1,56 @@
+.about-section {
+    padding: 64px 144px;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .about-content h2 {
+    margin-bottom: 24px !important;
+    border-bottom: 3px solid var(--content-bgcolor);
+    font-family: "Playfair Display" !important;
+    width: 130px;
+    text-align: center !important;
+  }
+  
+  .about-content p {
+    margin-bottom: 16px !important;
+    color: black;
+    font-family: "Source Sans Pro" !important;
+  }
+  
+  .about-content p:last-of-type {
+    margin-bottom: 32px;
+  }
+  
+  .know-more-button {
+    color: #000;
+    font-weight: bold;
+    font-family: "Source Sans Pro" !important;
+  }
+  
+  .know-more-button .MuiButton-startIcon {
+    color: var(--login-color) !important;
+  }
+  
+  @media (max-width: 960px) {
+    .about-section {
+      padding: 48px 72px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .about-section {
+      padding: 32px 24px;
+    }
+  
+    .about-content h2 {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  
