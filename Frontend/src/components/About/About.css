@@ -1,0 +1,129 @@
+.about-txt{
+    color: #EF6907;
+}
+
+.college-txt {
+    color: #08879F;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    font-family: var(--playfair) !important;
+}
+
+.college-para {
+    font-size: 1rem !important;
+    font-family: var(--main-font) !important;
+    color: #6D6D6D;
+    max-width: 600px;
+}
+
+.about-cont {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-about {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+}
+
+.bottom-about {
+    width: 100%;
+    height: 80%;
+    background-color: #08879F;
+
+}
+
+.choose-txt{
+    font-size: 1.6rem !important;
+    font-family: var(--playfair) !important;
+    font-weight: 700 !important;
+    color: #08879F;
+}
+.choose-para{
+    font-size: 1rem !important;
+    color:#101828;
+}
+
+.choose-section{
+    display: flex;
+}
+
+.chooseUs-heading{
+    font-size:1.3rem !important;
+    font-weight:600 !important;
+    color: #fff;
+    font-family: var(--main-font) !important;
+}
+
+.chooseUs-txt{
+    font-size:1rem;
+    font-weight:600;
+    color: #fff;
+    font-family: var(--main-font) !important;
+}
+
+.top-college{
+    font-size: 1.9rem !important;
+    font-weight: 700 !important;
+    font-family: var(--playfair) !important;
+    color: #101828;
+}
+.top-college-para{
+    font-size: 1.1rem !important;
+    color: #777D81;
+    font-family: var(--main-font) !important;
+}
+
+/* .slider-container{
+    width: 100% !important; 
+    position: relative;
+     display: flex !important;
+    justify-content: space-evenly;
+    align-items: center; 
+} */
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Responsive Design */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .college-txt {
+        color: #08879F;
+        font-size: 1.4rem !important;
+        font-weight: 600 !important;
+        font-family: var(--playfair) !important;
+    }
+
+    .top-college{
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+        font-family: var(--playfair) !important;
+        color: #101828;
+    }
+    .top-college-para{
+        font-size: 1rem !important;
+        color: #777D81;
+        font-family: var(--main-font) !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
