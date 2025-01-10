@@ -1,5 +1,6 @@
 .services-section {
     padding: 64px;
+    margin-top: 0px;
   }
   
   .services-header {
@@ -71,6 +72,33 @@
     font-family: "Playfair Display" !important;
     font-size: 1rem;
   }
+
+  @media (max-width: 820px) {
+    .services-section {
+      margin-top: 350px;
+    }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .impact-item {
+      flex: 1 1 calc(33.333% - 16px) !important; /* Three items per row */
+      max-width: calc(33.333% - 16px);
+      margin-bottom: 16px;
+    }
+  
+    .banner-image {
+      top: 0px !important;
+      left: 5%;
+    }
+    .impact-section {
+      max-width: 1200px;
+      /* margin: 32px auto; */
+      /* padding: 0 16px; */
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
   
   @media (max-width: 960px) {
     .services-section {
@@ -85,8 +113,11 @@
   }
   
   @media (max-width: 600px) {
+    
     .services-section {
       padding: 32px 16px;
+      margin-top: 0px !important;
+
     }
   
     .services-header {
