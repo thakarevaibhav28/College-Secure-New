@@ -6,7 +6,7 @@ import AboutSection from "./components/Home/AboutUs/AboutUs"
 import ServicesSection from "./components/Home/HServices/Hservices"
 import Testimonials from "./components/Home/Testimonial/Testimonial"
 import WhyChooseUs from "./components/why"
-import ServiceSlider from "./components/servicePackage/servicePackage"
+import ServiceSlider from "./components/Home/servicePackage/servicePackage"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.css'
@@ -16,14 +16,14 @@ function App() {
 
   return (
     <>
-     <Header />
+     {/* <Header /> */}
      <Banner />
      <ServicesSection />
 
      <AboutSection />
      <ServiceSlider />
      <Testimonials/>
-     <Footer />
+     {/* <Footer /> */}
 
     </>
   )

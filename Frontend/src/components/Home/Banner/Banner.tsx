@@ -230,7 +230,7 @@
 //     </Box>
 //   );
 // }
-"use client";
+import './Banner.css';
 
 import React from 'react';
 import { Box, Container, Typography, Grid } from "@mui/material";
@@ -238,7 +238,6 @@ import SchoolIcon from "../../../assets/Icons/college.svg";
 import GroupsIcon from "../../../assets/Icons/students.svg";
 import DescriptionIcon from "../../../assets/Icons/Essayreview.svg";
 import BannerImage from "../../../assets/Images/bannerimage.png";
-import './Banner.css';
 
 export default function Banner() {
   return (
@@ -269,7 +268,7 @@ export default function Banner() {
         </Typography>
 
         <Grid container spacing={3} className="impact-grid">
-          <Grid item xs={3} className="impact-item">
+          <Grid item xs={3} sm={3} md={3} className="impact-item">
             <Box>
               <Typography className="impact-number">
                 90%
@@ -290,7 +289,7 @@ export default function Banner() {
             </Box>
           </Grid>
 
-          <Grid item xs={3} className="impact-item">
+          <Grid item xs={4} sm={3} md={4} className="impact-item">
             <Box>
               <Typography className="impact-number">
                 200
@@ -312,7 +311,7 @@ export default function Banner() {
             </Box>
           </Grid>
 
-          <Grid item xs={3} className="impact-item">
+          <Grid item xs={4} sm={3} md={4} className="impact-item">
             <Box>
               <Typography className="impact-number">
                 8000
@@ -340,6 +339,7 @@ export default function Banner() {
           className="banner-image"
         />
       </Box>
+      
     </Box>
   );
 }

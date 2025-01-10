@@ -17,7 +17,7 @@ const Container = styled(Box)({
 
 const Card = styled(Box)({
   position: "relative",
-  width: "300px",
+  width: "320px",
   height: "400px",
   overflow: "hidden",
   borderRadius: "10px",
