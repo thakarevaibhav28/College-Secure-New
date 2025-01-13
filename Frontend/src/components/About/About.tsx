@@ -126,7 +126,8 @@ const About = () => {
             position: "absolute",
             bottom: 0,
             right: 0,
-            display: { xs: "none", md: "block" },
+            display: { xs: "none", sm: "block" },
+            width:{sm:425, md:"auto"}
           }}
         />
         <Box

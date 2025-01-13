@@ -172,11 +172,11 @@ export default function Header() {
               <IconButton
                 size="large"
                 edge="end"
-                sx={{ color: "#000"}}
+                sx={{ color: "#000" }}
                 aria-label="menu"
                 onClick={toggleMobileMenu}
               >
-                <MenuIcon sx={{fontSize: 35}}/>
+                <MenuIcon sx={{ fontSize: 35 }} />
               </IconButton>
             ) : (
               <Box>
@@ -211,19 +211,42 @@ export default function Header() {
       {isMobile ? (
         <Drawer anchor="top" open={mobileMenuOpen} onClose={toggleMobileMenu}>
           <List>
-            <ListItem component={Link} to="/" sx={{textAlign:"center", color:"#112437", fontWeight:"bold"}}>
+            <ListItem
+              component={Link}
+              to="/"
+              sx={{ textAlign: "center", color: "#112437", fontWeight: "bold" }}
+            >
               <ListItemText primary="HOME" />
             </ListItem>
-            <ListItem onClick={handleClick} sx={{textAlign:"center", color:"#112437"}}>
+            {/* <ListItem onClick={handleClick} sx={{textAlign:"center", color:"#112437"}}>
+              <ListItemText primary="SERVICES" />
+            </ListItem> */}
+            <ListItem
+              component={Link}
+              to="/services"
+              sx={{ textAlign: "center", color: "#112437" }}
+            >
               <ListItemText primary="SERVICES" />
             </ListItem>
-            <ListItem component={Link} to="/packages" sx={{textAlign:"center", color:"#112437"}}>
+            <ListItem
+              component={Link}
+              to="/packages"
+              sx={{ textAlign: "center", color: "#112437" }}
+            >
               <ListItemText primary="PACKAGES" />
             </ListItem>
-            <ListItem component={Link} to="/partners" sx={{textAlign:"center", color:"#112437"}}>
+            <ListItem
+              component={Link}
+              to="/partners"
+              sx={{ textAlign: "center", color: "#112437" }}
+            >
               <ListItemText primary="PARTNERS" />
             </ListItem>
-            <ListItem component={Link} to="/about" sx={{textAlign:"center", color:"#112437"}}>
+            <ListItem
+              component={Link}
+              to="/about"
+              sx={{ textAlign: "center", color: "#112437" }}
+            >
               <ListItemText primary="ABOUT US" />
             </ListItem>
           </List>
@@ -250,7 +273,7 @@ export default function Header() {
             >
               HOME
             </Button>
-            <Button
+            {/* <Button
               color="inherit"
               onClick={handleClick}
               endIcon={<KeyboardArrowDownIcon />}
@@ -261,7 +284,21 @@ export default function Header() {
               }}
             >
               SERVICES
+            </Button> */}
+            <Button
+              component={Link}
+              to="/services"
+              color="inherit"
+              sx={{
+                color:
+                  location.pathname === "/services"
+                    ? activeColor
+                    : defaultColor,
+              }}
+            >
+              SERVICES
             </Button>
+
             <Button
               component={Link}
               to="/packages"
