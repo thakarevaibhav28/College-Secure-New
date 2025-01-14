@@ -1,0 +1,17 @@
+.package-heading{
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    color:#08879F;
+    font-family:var(--playfair) !important;
+    text-transform: uppercase;
+}
+
+.readmoreBtn{
+    margin-top: 8px;
+    text-align: end;
+}
+.readmore{
+    color:#EF6907 !important;
+    font-weight: 700;
+}

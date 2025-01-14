@@ -1,0 +1,61 @@
+.service-bg{
+    width:100%;
+    height:300px;
+    background-image:url(../../assets/ServiceBG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.service-box{
+    width:480px;
+    padding:20px 30px;
+    background-color: #fff;
+    color:#EF6907;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: -20px;
+
+
+    position: relative;
+}
+.service-txt{
+    font-size: 1.2rem;
+}
+
+.card-txt{
+    font-family: var(--main-font) !important;
+    font-size: 1rem !important;
+}
+
+.service-heading{
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    color:#08879F;
+    font-family:var(--playfair) !important;
+    text-transform: uppercase;
+}
+.card-heading{
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    color: #000;
+    font-family: var(--playfair) !important;
+}
+
+.readmoreBtn{
+    margin-top: 8px;
+    text-align: end;
+}
+
+.readmore{
+    color:#000 !important;
+    font-weight: 700;
+}
