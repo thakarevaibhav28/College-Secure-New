@@ -43,47 +43,46 @@ const teamMembers = [
 ];
 
 const OurTeam = () => {
-  // Slider settings
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  slidesToShow:2.3,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: "20px",
-
-  responsive: [
-    {
-      breakpoint: 1366, // Larger devices (iPad Pro in landscape)
-      settings: {
-        slidesToShow: 2.3,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: "50px", // Adjust padding for better centering
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 2.3, // Default for large screens
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "30px",
+    responsive: [
+      {
+        breakpoint: 1366, // Larger devices (iPad Pro in landscape)
+        settings: {
+          slidesToShow: 2.3,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "50px", // Adjust padding for better centering
+        },
       },
-    },
-    {
-      breakpoint: 1024, // iPad Pro (portrait)
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-        // centerPadding: "30px", // Adjust padding for centering
+      {
+        breakpoint: 1024, // Medium screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "30px",
+        },
       },
-    },
-    {
-      breakpoint: 600, // Smaller devices
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-
+      {
+        breakpoint: 600, // Small screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false, // Center mode off for small screens
+          centerPadding: "0px",
+        },
       },
-    },
-  ],
-};
+    ],
+  };
 
   return (
     <Box className="our-team">
@@ -93,32 +92,33 @@ const settings = {
         </Typography>
       </Box>
 
-      <Box sx={{ width: "100%", position: "relative", overflow: "hiddden" }}>
+      <Box>
         {/* Slider */}
         <Slider {...settings}>
           {teamMembers.map((member) => (
-            <Box key={member.id} sx={{ px:2 }}>
+            <Box
+              key={member.id}
+              sx={{
+                maxWidth: { xs: "100%", sm: "980px" },
+              }}
+            >
               <Card
                 sx={{
                   display: "flex",
-                  flexDirection: { xs: "column",sm:"row", md: "row", xl:"row" },
-                  maxWidth: { xs: "100%", sm: "990px" },
-                  maxHeight: { xs: "auto" },
-                  margin:{xs:"0 auto", md:"10px"},
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+                  flexDirection: { xs: "column", sm: "row" },
                   borderRadius: "16px",
-                  overflow: "hidden",
+                  margin:{xs:"none", md:"0 10px"}
                 }}
               >
                 <CardMedia
-                  component="img" 
+                  component="img"
                   image={member.image}
                   alt={member.name}
                   sx={{
-                    width: { xs: 200, sm: 200, md: 200 },
+                    width: { xs: 200, sm: 200 },
                     height: "auto",
                     margin: "0 auto",
-                    backgroundPosition:"center",
+                    backgroundPosition: "center",
                     objectFit: "cover",
                   }}
                 />
@@ -139,21 +139,19 @@ const settings = {
                       color: "#000",
                       mb: 2,
                       pb: 1,
-                      textAlign:{xs:'center', sm:'left'}
-
+                      textAlign: { xs: "center", sm: "left" },
                     }}
                   >
                     {member.name}
                   </Typography>
                   <Typography
                     variant="h6"
-                    color="primary"
                     sx={{
                       fontSize: "1rem",
                       fontFamily: "var(--main-font) ",
                       color: "#000",
                       mb: 2,
-                      textAlign:{xs:'center', sm:'left'}
+                      textAlign: { xs: "center", sm: "left" },
                     }}
                   >
                     {member.role}
@@ -165,7 +163,7 @@ const settings = {
                       fontFamily: "var(--main-font) ",
                       color: "#000",
                       mb: 2,
-                      textAlign:{xs:'center', sm:'left'}
+                      textAlign: { xs: "center", sm: "left" },
                     }}
                   >
                     {member.description}
@@ -175,15 +173,14 @@ const settings = {
                     href="#"
                     sx={{
                       color: "#EF6907",
-                      textAlign:{xs:'center', sm:'left', md:"end"},
-
+                      textAlign: { xs: "center", sm: "left", md: "left" },
                       textDecoration: "none",
                       "&:hover": {
                         textDecoration: "underline",
                       },
                     }}
                   >
-                    Read More
+                    Read More...
                   </Typography>
                 </CardContent>
               </Card>
