@@ -30,7 +30,7 @@ export default function Footer() {
       }}
     >
       <Container maxWidth="xl">
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{justifyContent:{xs:"space-evenly", sm:"normal"}}} mb={2}>
           {/* Logo Column */}
           <Grid size={{ xs: 12, md: 2 }} textAlign="center">
             <Box
@@ -42,7 +42,7 @@ export default function Footer() {
           </Grid>
 
           {/* Quick Links Column */}
-          <Grid size={{ xs: 6, md: 2 }}>
+          <Grid size={{ xs: 5, sm: 4, md: 2 }}>
             <Typography
               variant="h6"
               sx={{
@@ -87,7 +87,7 @@ export default function Footer() {
           </Grid>
 
           {/* Services Column */}
-          <Grid size={{ xs: 6, md: 2 }}>
+          <Grid size={{ xs: 5, sm: 4, md: 2 }}>
             <Typography
               variant="h6"
               sx={{
@@ -125,7 +125,7 @@ export default function Footer() {
           </Grid>
 
           {/* Policy Column */}
-          <Grid size={{ xs: 6, md: 2 }}>
+          <Grid size={{ xs: 5, sm: 4, md: 2 }}>
             <Typography
               variant="h6"
               sx={{
@@ -163,7 +163,7 @@ export default function Footer() {
           </Grid>
 
           {/* Others Column */}
-          <Grid size={{ xs: 6, md: 2 }}>
+          <Grid size={{ xs: 5, sm: 4, md: 2 }}>
             <Typography
               variant="h6"
               sx={{
@@ -212,7 +212,7 @@ export default function Footer() {
           </Grid>
 
           {/* Contact Us Column */}
-          <Grid size={{ xs: 10, md: 2 }} sx={{ overflow: "hidden" }}>
+          <Grid size={{ xs: 5, sm: 4, md: 2 }} sx={{ overflow: "hidden" }}>
             <Typography
               variant="h6"
               sx={{
@@ -309,28 +309,29 @@ export default function Footer() {
         <Container maxWidth="xl">
           <Grid container sx={{ justifyContent: "space-between" }}>
             <Grid
-              size={{ xs: 3 }}
+              size={{ xs: 4 }}
               sx={{ display: { xs: "none", md: "block" } }}
             ></Grid>
-            <Grid size={{ xs: 12, sm: 12, md: 6 }}>
+            <Grid size={{ xs: 12, sm: 12, md: 12 }}>
               <Box>
                 <Typography
                   variant="body2"
                   color="white"
                   fontFamily="Source Sans Pro"
-                  sx={{ textAlign: { xs: "center", md: "left" } }}
+                  sx={{ textAlign: { xs: "center", md: "center" } }}
                 >
                   Copyright© 2023-24. Secure College Admission. All Rights
                   Reserved.
                 </Typography>
               </Box>
             </Grid>
-            <Grid size={{ xs: 12, sm: 12, md: 3 }}>
+            <Grid size={{ xs: 12, sm: 12, md:12 }}>
               <Box
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent:"center",
+                  textAlign: { xs: "center", md: "center" } ,
                   gap: 2,
                 }}
               >
