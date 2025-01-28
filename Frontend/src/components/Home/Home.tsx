@@ -16,14 +16,14 @@ function HomePage() {
 
   return (
     <>
-     {/* <Header /> */}
+     <Header />
      <Banner />
      <ServicesSection />
 
      <AboutSection />
      <ServiceSlider />
      <Testimonials/>
-     {/* <Footer /> */}
+     <Footer />
 
     </>
   )

@@ -1,0 +1,45 @@
+.wave-divider {
+    position: relative;
+    background: #fff;
+  }
+  
+  .wave-divider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 150px;
+    background: #008b9b;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    z-index: 1;
+  }
+  
+  .consultation-image {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .about-section {
+    background-color: #008b9b;
+    color: white;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 600px) {
+    .wave-divider::after {
+      height: 100px;
+    }
+  
+    .about-section {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  
