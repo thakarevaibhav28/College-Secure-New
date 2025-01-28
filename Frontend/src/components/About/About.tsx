@@ -22,7 +22,7 @@ import "slick-carousel/slick/slick-theme.css";
 import OurTeam from "./OurTeam/OurTeam";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
+import CollegeSlider from "../Common/CollegeSlider"
 const logos = [
   { img: logo1 },
   { img: logo2 },
@@ -214,7 +214,7 @@ const About = () => {
         </Container>
 
 {/* College Slider */}
-        <Box
+        {/* <Box
           sx={{ 
             width: "95%",
             margin: "0 auto",
@@ -243,7 +243,8 @@ const About = () => {
               </Box>
             ))}
           </Slider>
-        </Box>
+        </Box> */}
+        <CollegeSlider />
       </Box> 
 
       <Box sx={{ mb: 6, mt:6 }}>
